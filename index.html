@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+        #number_input {
+            width: 250px;
+            height: 30px;
+            font-size: 15pt;
+        }
+    </style>
+    <title>숫자야구 게임</title>
+</head>
+<body>
+    <py-script src="./main.py"></py-script>
+    <mani>
+        <h3 id="game_rule"></h1>
+        <h3 id="trytime"></h1>
+            <div>
+                <input
+                type="number"
+                id="number_input"
+                min="1"
+                max="9999"
+                placeholder="Guess 0000 to 9999"
+                />
+                <button id="answer" pys-onClick="play_game">Guess</button>
+            </div>
+            <h1 id="result"></h1>
+        </mani>
+</body>
+</html>
